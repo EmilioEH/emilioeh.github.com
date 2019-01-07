@@ -62,8 +62,8 @@ img {
 	--margin-standard: 1rem;
 	--margin-small: calc( var(--margin-standard) / 2 );
 
-	--font-primary: helvetica, sans-serif;
-	--font-secondary: 'EB Garamond', serif;
+    --font-primary: 'Open Sans', Arial, sans-serif;
+    --font-secondary: 'EB Garamond', serif;
 }
 
 html {
