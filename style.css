@@ -157,6 +157,7 @@ a:active {
 
 p a:active {
 	font-weight: var(--font-weight-bold);
+	font-family: var(--font-secondary);
 }
 
 .featured {
