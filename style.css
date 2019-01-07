@@ -124,6 +124,7 @@ h6 {
 p {
 	color: var(--color-grey-dark);
 	margin-top: 0;
+	font-family: var(--font-secondary);
 }
 
 /* Links */
@@ -157,7 +158,6 @@ a:active {
 
 p a:active {
 	font-weight: var(--font-weight-bold);
-	font-family: var(--font-secondary);
 }
 
 .featured {
