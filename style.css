@@ -21,6 +21,8 @@ img {
 	--color-grey-dark: #404040;
 	--color-grey-light: #ddd;
 
+	--color-accent: #EB330E;
+
 	--color-background: #404040;
 	
 	--color-error: #c64f3d;
@@ -133,6 +135,8 @@ a{
 	color: var(--color-grey);
 	font-weight: var(--font-weight-light);
 	text-decoration: none;
+  	transition: 0.3s;
+  	background-color-opacity: 0;
 }
 
 p a {
@@ -143,7 +147,8 @@ p a {
 
 a:hover, a:focus {
 	color: var(--color-grey-light);
-	text-decoration: underline;
+	background-color: var(--color-accent);
+	opacity: 1;
 }
 
 p a:hover, p a:focus {
@@ -378,7 +383,8 @@ li {
 .current-page {
 	color: var(--color-link-selected);
 	font-weight: var(--font-weight-regular);
-	text-decoration: underline;
+	border-bottom: 4px solid var(--color-accent);
+
 }
 
 @media( min-width: 600px ) {
