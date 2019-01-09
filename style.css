@@ -62,6 +62,11 @@ img {
 	--font-weight-regular: 400;
 	--font-weight-light: 300;
 
+	--font-secondary-weight-bold: 700;
+	--font-secondary-weight-semi-bold: 600;
+	--font-secondary-weight-medium: 500;
+	--font-secondary-weight-regular: 400;
+
 	--margin-large: calc( var(--margin-standard) * 2 );	
 	--margin-standard: 1rem;
 	--margin-small: calc( var(--margin-standard) / 2 );
@@ -132,6 +137,7 @@ p {
 	margin-top: 0;
 	font-family: var(--font-secondary);
 	font-size: var(--font-size-med);
+	font-weight: var(--font-secondary-weight-medium);
 }
 
 /* Links */
