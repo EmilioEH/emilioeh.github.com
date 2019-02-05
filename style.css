@@ -248,11 +248,11 @@ header {
 ============================================================================*/
 
 .case-study-image-with-no-caption { 
-	margin: var(--margin-standard) 0;
+	margin: var(--margin-standard) auto;
 }
 
 .case-study-image-with-caption { 
-	margin: var(--margin-standard) 0 0 0;
+	margin: var(--margin-standard) auto 0;
 }
 
 .image-caption {
