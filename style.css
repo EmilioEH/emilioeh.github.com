@@ -238,7 +238,7 @@ header {
 	background-color: var(--color-background);
 	display: block;
 	margin: 0;
-	padding: var(--padding-basic) 0;
+	padding: var(--padding-basic) 0 0;
 	width: 100%;
 }
 
@@ -447,12 +447,12 @@ ol li {
 	text-decoration: none;
 	text-shadow: none;
 	box-shadow: var(--shadow);
-  	transition: var(--transition-time);
 }
 
 .hero-button:hover {
 	box-shadow: var(--shadow-active);
 	background-color: var(--color-accent);
+  	transition: var(--transition-time);
 } 
 
 .hero-button:active {
