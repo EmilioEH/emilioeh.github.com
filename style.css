@@ -63,10 +63,10 @@ img {
 	--font-weight-regular: 400;
 	--font-weight-light: 300;
 
-	--font-secondary-weight-bold: 700;
-	--font-secondary-weight-semi-bold: 600;
-	--font-secondary-weight-medium: 500;
-	--font-secondary-weight-regular: 400;
+	--font-primary-weight-bold: 700;
+	--font-primary-weight-semi-bold: 600;
+	--font-primary-weight-medium: 500;
+	--font-primary-weight-regular: 400;
 
 	--margin-large: calc( var(--margin-standard) * 2 );	
 	--margin-standard: 1rem;
@@ -82,19 +82,8 @@ html {
 	line-height: 1.5;
 }
 
-@media ( min-width: 600px ) {
-	html {
-	font-size: 18px;
-	}
-}
 
-@media ( min-width: 900px ) {
-	html {
-	font-size: 20px;
-	}
-}
-
-@media ( min-width: 1200px ) {
+@media ( min-width: 800px ) {
 	html {
 	font-size: 22px;
 	}
@@ -136,9 +125,9 @@ h6 {
 p {
 	color: var(--color-grey-dark);
 	margin-top: 0;
-	font-family: var(--font-secondary);
+	font-family: var(--font-primary);
 	font-size: var(--font-size-reg);
-	font-weight: var(--font-secondary-weight-regular);
+	font-weight: var(--font-primary-weight-regular);
 }
 
 /* Links */
@@ -167,7 +156,7 @@ a:hover, a:focus {
 }
 
 .featured {
-	font-family: var(--font-secondary);
+	font-family: var(--font-primary);
 	font-size: var(--font-size-med);
 	font-style: italic;
 	margin-bottom: var(--margin-standard);
@@ -266,8 +255,6 @@ header {
 
 .card-image {
   	max-height: 180px;
-  	max-width: 118px;
-  	height: auto;
   	width: auto;
   	overflow: hidden;
   	justify-self: center;
@@ -276,8 +263,8 @@ header {
 
 @media ( min-width: 900px ) {
 	.card-image {
-		max-height: 115px;
-  		max-width: 115px;
+		max-height: 180px;
+  		max-width: auto;
 	}
 }
 
@@ -310,6 +297,31 @@ header {
 	grid-template-columns: 1fr;
 }
 
+.card {
+	display: grid;
+	grid-template-columns: repeat( 2, 1fr );
+	grid-template-rows: auto;
+}
+
+.card-title {
+	grid-column: 1/ span 2;
+	grid-row: 1;
+}
+
+.subtext {
+	grid-column: 1;
+	grid-row: 2/3;
+}
+
+.meta { 
+	grid-column: 1;
+	grid-row: 4;
+}
+
+.card-image {
+	grid-column: 2;
+	grid-row: 2/3;
+}
 @media ( min-width: 600px ) {
 	.grid-layout {
 		grid-template-columns: repeat( 2, 1fr );
