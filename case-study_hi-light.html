@@ -15,21 +15,23 @@
 
 		<header>
 
-			<div class="max-width-content nav-site">
+			<div class="max-width-content">
 
 				<a href="index.html" class="logo">Emilio Harrison<small> UX Design</small></a>
 
+				<!-- TESTING NEW DESIGN
 				<nav>
 
 					<ul>
-						<li><a href="index.html">Home</a></li>
+						<li><a href="index.html" class="active">Home</a></li>
 						<li><a href="contact.html">Contact</a></li>
-						<li><a href="resume.html">Résumé</a></li>
+						<li><a href="resume.html">Resume</a></li>
 						<li><a href="portfolio.html">Portfolio</a></li>
 						
 					</ul>
 					
 				</nav>
+				-->
 
 			</div>
 
@@ -200,6 +202,7 @@
 				<li>User test outside of the building.</li>
 			</ol>
 
+			<button onclick="topFunction()" id="myBtn" title="Go to top" class="hero-button">Top</button>
 
 		</div>
 
@@ -208,7 +211,7 @@
 		<footer>
 			
 	  		<div class="max-width-content footer-nav">
-
+	  			
 	  			<div class="footer-follow">
 
 	  				<h4>Follow Me</h4>
@@ -227,32 +230,53 @@
 
 	  				<ul>
 						<li><a href="mailto:contact@emilioharrison.com">Email</a></li>
-						<li><a href="https://calendly.com/emilio-harrison/open-meeting" target="_blank">Schedule a one-on-one</a></li>
+						<li><a href="https://calendly.com/emilio-harrison/open-meeting" target="_blank">Meet</a></li>
 					</ul>
 
 				</div>
 	  			
 	  			<div class="footer-help">
 
-	  				<h4>Help Me</h4>
+	  				<h4>Improvement</h4>
 
-	  				<a href="https://docs.google.com/forms/d/e/1FAIpQLSdIB-a5d1F5CcZ21jn3IyrBTDD7OGS3JrOI2wO_rBLhFJnuXA/viewform?usp=sf_link" target="_blank">Give feedback</a>
+	  				<a href="https://docs.google.com/forms/d/e/1FAIpQLSdIB-a5d1F5CcZ21jn3IyrBTDD7OGS3JrOI2wO_rBLhFJnuXA/viewform?usp=sf_link" target="_blank">Take the survey</a>
 	  				
 				</div>
 					
 				<div class="signature">
 
-					<p class="copy-right">Created by Emilio Harrison</p>
+					<!-- TESTING A NEW DESIGN
+					<a href="https://en.wikipedia.org/wiki/Special:Random" class="meta text-focus-in" target="_blank">Are you bored?</a>
+					-->
+
+					<a href="https://en.wikipedia.org/wiki/Special:Random" class="meta" target="_blank">Are you bored?</a>
 
 					<p class="copy-right">© 2018 Emilio Harrison</p>
-
-					<a href="https://en.wikipedia.org/wiki/Special:Random" class="meta text-focus-in" target="_blank">Are you bored?</a>
 
 				</div>
 
 			</div>
 
 		</footer>
+
+		<script>
+			// When the user scrolls down 20px from the top of the document, show the button
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+			  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+			    document.getElementById("myBtn").style.display = "block";
+			  } else {
+			    document.getElementById("myBtn").style.display = "none";
+			  }
+			}
+
+			// When the user clicks on the button, scroll to the top of the document
+			function topFunction() {
+			  document.body.scrollTop = 0; // For Safari
+			  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+			}
+		</script>
 
 	</body>
 
