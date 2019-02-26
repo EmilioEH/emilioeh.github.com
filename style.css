@@ -49,24 +49,24 @@ img {
 
 :root {
 	--scale-ratio:			1.2;
-	
-	--font-size-xxxl: calc( 1rem * var(--scale-ratio) * var(--scale-ratio) * var(--scale-ratio) * var(--scale-ratio) * var(--scale-ratio) );
-	--font-size-xxl: calc( 1rem * var(--scale-ratio) * var(--scale-ratio) * var(--scale-ratio) * var(--scale-ratio) );
-	--font-size-xl:	calc( 1rem * var(--scale-ratio) * var(--scale-ratio) * var(--scale-ratio) );
-	--font-size-lg:	calc( 1rem * var(--scale-ratio) * var(--scale-ratio) );
-	--font-size-med: calc( 1rem * var(--scale-ratio) );
-	--font-size-reg: 1rem;
-	--font-size-sm: calc( 1rem / var(--scale-ratio) );
-	--font-size-xs: calc( 1rem / (var(--scale-ratio) * var(--scale-ratio)) );
 
-	--font-weight-bold: 700;
+	--font-size-xxxl:  calc( 1rem * var(--scale-ratio) * var(--scale-ratio) * var(--scale-ratio) * var(--scale-ratio) * var(--scale-ratio) * var(--scale-ratio) );;
+    --font-size-xxl:   calc( 1rem * var(--scale-ratio) * var(--scale-ratio) * var(--scale-ratio) * var(--scale-ratio) * var(--scale-ratio) );
+    --font-size-xl:    calc( 1rem * var(--scale-ratio) * var(--scale-ratio) * var(--scale-ratio) * var(--scale-ratio) );
+    --font-size-lg:     calc( 1rem * var(--scale-ratio) * var(--scale-ratio) * var(--scale-ratio) );
+    --font-size-med:     calc( 1rem * var(--scale-ratio) * var(--scale-ratio) );
+    --font-size-reg:    calc( 1rem * var(--scale-ratio) );
+    --font-size-sm:     calc( .65rem * var(--scale-ratio) );
+    --font-size-xs:   calc(.5rem * var(--scale-ratio) );
+
+	--font-weight-bold: 800;
 	--font-weight-semi-bold: 600;
 	--font-weight-medium: 500;
-	--font-weight-regular: 400;
+	--font-weight-regular: 300;
 
-	--margin-xxl: calc( var(--margin-xl) * var(--scale-ratio) );
-	--margin-xl: calc( var(--margin-large) * var(--scale-ratio) );
-	--margin-large: calc( var(--margin-standard) * var(--scale-ratio) );	
+	--margin-xxl: 3.5rem;
+	--margin-xl: 3rem;
+	--margin-large: 1.5rem;
 	--margin-standard: 1rem;
 	--margin-small: calc( var(--margin-standard) / var(--scale-ratio) );
 	--margin-xs: calc( var(--margin-small) / var(--scale-ratio) );
@@ -77,20 +77,16 @@ img {
 
 html {
 	font-family: var(--font-primary);
-	font-size: 18px;
 	line-height: 1.5;
-}
-
-
-@media ( min-width: 800px ) {
-	html {
-	font-size: 22px;
-	}
 }
 
 /* Headings */
 
 h2 + h3 {
+	margin: var(--margin-xs) 0 0 0;
+}
+
+h3 + h4 {
 	margin: var(--margin-xs) 0 0 0;
 }
 
@@ -101,25 +97,27 @@ h1 {
 }
 
 h2 {
-	font-size: var(--font-size-xl);
+	font-size: var(--font-size-xxl);
 	margin: var(--margin-xxl) 0 0 0;
 	font-weight: var(--font-weight-semi-bold);
 }
 
 h3 {
-	font-size: var(--font-size-lg);
+	font-size: var(--font-size-xl);
 	font-weight: var(--font-weight-medium);
 	margin: var(--margin-xl) 0 0 0;
 }
 
 h4 {
-	font-size: var(--font-size-reg);
-	font-weight: var(--font-weight-bold);
+	font-size: var(--font-size-lg);
+	font-weight: var(--font-weight-regular);
 	margin: var(--margin-large) 0 0 0;
 }
 
 h5 {
-	font-size: 1rem;
+	font-size: var(--font-size-reg);
+	font-weight: var(--font-weight-semi-bold);
+	margin: var(--margin-standard) 0 0 0;
 }
 
 h6 {
@@ -225,30 +223,21 @@ hr {
 ============================================================================*/	
 
 body {
-	margin: 0 ;
+	margin: 0;
 	overflow-x: hidden;
 }
 
-.max-width-content {
+main {
+	margin: 86.59px var(--margin-standard) var(--margin-xxl) ;
 	max-width: 700px;
-	margin: 0 1rem;
 }
 
 @media ( min-width: 732px ) {
-	.max-width-content {
-	margin: 0 auto;
-}
-}
-
-
-main {
-	margin-top: 86.59px;
-}
-
-@media ( min-width: 800px ) {
 	main {
-	margin-top: 106.38px;
-	}
+	margin-left: auto;
+	margin-right: auto;
+
+}
 }
 
 html {
@@ -265,6 +254,16 @@ html {
 	}
 }
 
+.max-width-content {
+	max-width: 700px;
+	margin: 0 1rem;
+}
+
+@media ( min-width: 732px ) {
+	.max-width-content {
+	margin: 0 auto;
+}
+}
 
 /*=========================================================================
   Header
@@ -304,11 +303,11 @@ cite {
 ============================================================================*/
 
 .case-study-image-with-no-caption { 
-	margin: var(--margin-standard) auto var(--margin-xxl);
+	margin: var(--margin-large) auto var(--margin-xxl);
 }
 
 .case-study-image-with-caption { 
-	margin: var(--margin-standard) auto 0;
+	margin: var(--margin-large) auto 0;
 }
 
 .image-caption {
@@ -365,7 +364,7 @@ cite {
 	display: grid;
 	grid-gap: 1rem;
 	grid-template-columns: 1fr;
-	margin: var(--margin-large) 0 0 0;
+	margin: var(--margin-xl) 0 ;
 }
 
 .card {
@@ -398,6 +397,7 @@ cite {
 		grid-template-columns: repeat( 2, 1fr );
 	}
 }
+
 
 /*=========================================================================
   Footer
@@ -486,36 +486,15 @@ nav li a {
    ========================================================================== */
 
 .hero-block {
-	align-items: center;
-	background-repeat: no-repeat;
+	height: 50vh;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
-  	background-position: center;
-}
-
-.hero-who {
-	background-image: url(images/hero-placeholder.jpg);
-	height: 100vh;
-	max-width: auto;
-}
-
-.hero-button-position {
-	position: relative;
-}
-
-.hero-text-container {
-	padding: var(--padding-basic);
-	max-width: 500px;
 }
 
 .hero-text {
-	color: white;
-	text-shadow: var(--shadow);
-}
-
-.hero-image {
-	padding: 5px;
-    max-width: 250px;
+	font-style: italic;
+	font-size: var(--font-size-med);
 }
 
 /* ==========================================================================
@@ -553,34 +532,55 @@ nav li a {
   	z-index: 99;
 }
 /* ==========================================================================
-   Forms
+   Resume
    ========================================================================== */
-input[type="text"], input[type="email"], textarea {
-	border-radius: var(--border-radius);
-	border: 1px solid var(--color-grey-light);
+.resume {
+	color: var(--color-gray);
+	margin: auto;
+	max-width: 40em;
+}
+
+.resume-identify {
+	margin-bottom: 0;
+}
+
+.resume-header {
+	color: var(--color-primary-cool);
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 1rem;
+}
+
+.resume-heading {
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.resume-location {
+	font-style: italic;
+}
+
+.resume-name {
 	display: block;
-	font-size: var(--font-size-sm)
-	margin-bottom: 1rem;
-	margin: .5rem 0;
-	padding: .5rem;
-	width: 90%;
+	margin-bottom: 0;
 }
 
-select {
-	height: 2rem;
+.resume-section {
+	padding-bottom: 2rem;
 }
 
-textarea {
-	min-height: 5rem;
+.resume-tagline {
+	color: var(--color-gray);
+	margin: 0;
+	padding: 0;
 }
 
-input:focus, textarea:focus {
-	box-shadow: var(--shadow-active);
-	outline: none;
+section {
+	margin-bottom: var(--margin-small);
 }
 
-label {
-	display: block;
+.resume-section h3 {
+	margin-top: var(--margin-small);
 }
 
 
