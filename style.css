@@ -273,7 +273,7 @@ header {
 	background-color: var(--color-white);
 	display: block;
 	margin: 0;
-	padding: var(--padding-basic) 0 var(--padding-small);
+	padding: var(--padding-basic) 0;
 	box-shadow: var(--shadow-active);
 	position: fixed; 
   	top: 0; 
