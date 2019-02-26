@@ -180,7 +180,7 @@ button:focus, a:focus {
 
 .meta {
 	color: var(--color-grey);
-	font-size: var(--font-size-xs);
+	font-size: var(--font-size-sm);
 	font-weight: var(--font-weight-medium);
 	margin: 0;
 
