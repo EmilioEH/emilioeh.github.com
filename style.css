@@ -228,16 +228,8 @@ body {
 }
 
 main {
-	margin: 86.59px var(--margin-standard) var(--margin-xxl) ;
-	max-width: 700px;
-}
-
-@media ( min-width: 732px ) {
-	main {
-	margin-left: auto;
-	margin-right: auto;
-
-}
+	max-width: 1280px;
+	margin: 86.59px auto var(--margin-xxl);
 }
 
 html {
@@ -245,6 +237,7 @@ html {
 }
 
 .case-study-main {
+	max-width: 1080px;
 	margin-top: calc(var(--margin-large) + 56px);
 }
 
@@ -256,14 +249,18 @@ html {
 
 .max-width-content {
 	max-width: 700px;
-	margin: 0 1rem;
 }
 
 @media ( min-width: 732px ) {
-	.max-width-content {
+	.max-width-text {
 	margin: 0 auto;
 }
 }
+
+.max-width-text {
+	max-width: 700px;
+}
+
 
 /*=========================================================================
   Header
@@ -273,8 +270,7 @@ header {
 	background-color: var(--color-white);
 	display: block;
 	margin: 0;
-	padding: var(--padding-basic) 0;
-	box-shadow: var(--shadow-active);
+	padding: var(--padding-large) 0 var(--padding-large) var(--padding-large);
 	position: fixed; 
   	top: 0; 
   	width: 100%;
@@ -325,6 +321,7 @@ cite {
   	overflow: hidden;
   	justify-self: center;
   	align-self: center;
+	margin: var(--margin-large) 0 var(--margin-xl);
 }
 
 @media ( min-width: 900px ) {
@@ -337,7 +334,7 @@ cite {
 
 .card {
 	max-width: 100%;
-	padding: var(--padding-basic);
+	padding: var(--padding-large);
 	border-radius: var(--border-radius);
 	display: grid;
   	grid-template-columns:  1fr 1fr;
@@ -369,32 +366,28 @@ cite {
 
 .card {
 	display: grid;
-	grid-template-columns: repeat( 2, 1fr );
+	grid-template-columns: repeat( 1, 1fr );
 	grid-template-rows: auto;
 }
 
 .card-title {
-	grid-column: 1/ span 2;
-	grid-row: 1;
+	grid-row: 2;
 }
 
 .subtext {
-	grid-column: 1;
-	grid-row: 2/3;
+	grid-row: 3;
 }
 
-.meta { 
-	grid-column: 1;
+.meta {
 	grid-row: 4;
 }
 
 .card-image {
-	grid-column: 2;
-	grid-row: 2/3;
+	grid-row: 1;
 }
 @media ( min-width: 600px ) {
 	.grid-layout {
-		grid-template-columns: repeat( 2, 1fr );
+		grid-template-columns: repeat( 3, 1fr );
 	}
 }
 
@@ -410,8 +403,11 @@ footer {
 }
 
 .footer-nav {
+	margin: var(--margin-large) auto 0;
+	max-width: 1280px;
 	display: grid;
 	grid-template-columns: repeat( 3, 1fr );
+
 }
 
 .signature {
@@ -486,15 +482,19 @@ nav li a {
    ========================================================================== */
 
 .hero-block {
-	height: 50vh;
-	display: flex;
-	flex-direction: column;
+	height: 500px;
+	display: grid;
+	background-color: var(--color-grey-light-light);
+	grid-template-columns: repeat(2, 400px);
+	grid-column-gap: var(--margin-xxl);
 	justify-content: center;
+	align-content: center;
 }
 
 .hero-text {
 	font-style: italic;
 	font-size: var(--font-size-med);
+	max-width: 400px;
 }
 
 /* ==========================================================================
@@ -532,12 +532,29 @@ nav li a {
   	z-index: 99;
 }
 /* ==========================================================================
-   Resume
+   About
    ========================================================================== */
+.about {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin: var(--margin-xl) 0;
+	justify-content: center;
+}
+
+.about h3{
+	margin-top: 0;
+}
+
+.about-image {
+	grid-area: 1 / col2-start / last-line / 2;
+	justify-self: center;
+
+}
+
 .resume {
-	color: var(--color-gray);
-	margin: auto;
-	max-width: 40em;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	justify-items: center;
 }
 
 .resume-identify {
@@ -545,42 +562,27 @@ nav li a {
 }
 
 .resume-header {
-	color: var(--color-primary-cool);
-	display: flex;
-	justify-content: space-between;
-	padding-bottom: 1rem;
 }
 
 .resume-heading {
-	margin-bottom: 0;
-	margin-top: 0;
 }
 
 .resume-location {
-	font-style: italic;
 }
 
 .resume-name {
-	display: block;
-	margin-bottom: 0;
 }
 
 .resume-section {
-	padding-bottom: 2rem;
 }
 
 .resume-tagline {
-	color: var(--color-gray);
-	margin: 0;
-	padding: 0;
 }
 
 section {
-	margin-bottom: var(--margin-small);
 }
 
 .resume-section h3 {
-	margin-top: var(--margin-small);
 }
 
 
