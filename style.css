@@ -268,12 +268,14 @@ html {
 
 header {
 	background-color: var(--color-white);
-	display: block;
+	display: flex;
 	margin: 0;
-	padding: var(--padding-large) 0 var(--padding-large) var(--padding-large);
+	padding: var(--padding-large) var(--padding-large);
 	position: fixed; 
   	top: 0; 
-  	width: 100%;
+  	width: 96%;
+  	justify-content: space-between;
+
 }
 
 
@@ -492,7 +494,6 @@ nav li a {
 }
 
 .hero-text {
-	font-style: italic;
 	font-size: var(--font-size-med);
 	max-width: 400px;
 }
