@@ -526,6 +526,7 @@ nav li a {
 } 
 
 #myBtn {
+	font-weight: var(--font-weight-medium);
 	display: none;
   	position: fixed;
   	bottom: 20px;
