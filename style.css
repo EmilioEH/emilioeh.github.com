@@ -409,6 +409,14 @@ footer {
 	max-width: 1280px;
 	display: grid;
 	grid-template-columns: repeat( 3, 1fr );
+}
+
+.footer-talk {
+	  justify-self: center;
+}
+
+.footer-help {
+	  justify-self: end;
 
 }
 
