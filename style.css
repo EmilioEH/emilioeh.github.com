@@ -29,9 +29,13 @@ img {
 	--color-error: #c64f3d;
 	--color-success: #3dc67a;
 	
-	--padding-large: calc( var(--padding-basic) * 2 );	
-	--padding-basic: 1rem;
-	--padding-small: calc( var(--padding-basic) / 2 );
+	--padding-xxl: 3.5rem;
+	--padding-xl: 3rem;
+	--padding-large: 1.5rem;
+	--padding-standard: 1rem;
+	--padding-small: calc( var(--padding-standard) / var(--scale-ratio) );
+	--padding-xs: calc( var(--padding-small) / var(--scale-ratio) );
+	--padding-xxs: calc( var(--padding-xs) / var(--scale-ratio) );
 
 	--border-radius: 3px;
 	--border-radius-big: 1rem;
@@ -229,7 +233,13 @@ body {
 
 main {
 	max-width: 1280px;
-	margin: 86.59px auto var(--margin-xxl);
+	margin: 86.59px var(--margin-standard) var(--margin-xxl);
+}
+
+@media ( min-width: 1280px ){
+	main {
+		margin: 0 auto;
+	}
 }
 
 html {
@@ -270,7 +280,7 @@ header {
 	background-color: var(--color-white);
 	display: flex;
 	margin: 0;
-	padding: var(--padding-large) var(--padding-large);
+	padding: var(--padding-large) var(--padding-standard);
 	position: fixed; 
   	top: 0; 
   	width: 96%;
@@ -401,11 +411,11 @@ cite {
 footer {
 	background-color: var(--color-background);
 	color: var(--color-white);
-	padding: var(--padding-basic) 0;
+	margin: 0;
+	padding: var(--padding-large) var(--padding-large);
 }
 
 .footer-nav {
-	margin: var(--margin-large) auto 0;
 	max-width: 1280px;
 	display: grid;
 	grid-template-columns: repeat( 3, 1fr );
@@ -437,7 +447,7 @@ footer h4 {
 	font-weight: var(--font-weight-semi-bold);
 	font-size: var(--font-size-lg);
 	line-height: 1;
-	padding: .2rem;
+	padding: 0;
 }
 
 small {
@@ -492,13 +502,19 @@ nav li a {
    ========================================================================== */
 
 .hero-block {
-	height: 500px;
+	min-height: 500px;
+	padding: 0 var(--padding-standard);
 	display: grid;
 	background-color: var(--color-grey-light-light);
-	grid-template-columns: repeat(2, 400px);
+	grid-template-columns: repeat(1, 1fr);
 	grid-column-gap: var(--margin-xxl);
 	justify-content: center;
 	align-content: center;
+}
+
+@media ( min-width: 700px ){
+	.hero-block {
+	grid-template-columns: repeat(2, 400px);
 }
 
 .hero-text {
@@ -563,8 +579,13 @@ nav li a {
 
 .resume {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: 1fr;
 	justify-items: center;
+}
+
+@media ( min-width: 700px ){
+	.resume {
+	grid-template-columns: 1fr 1fr 1fr;
 }
 
 .resume-identify {
