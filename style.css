@@ -214,7 +214,7 @@ button:focus, a:focus {
 hr {
 	border: 2px solid transparent;
 	border-radius: .1rem;
-	margin: 6rem 0;
+	margin: 2rem 0;
 }
 
 .small-hr {
