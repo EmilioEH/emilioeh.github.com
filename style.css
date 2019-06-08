@@ -448,7 +448,7 @@ cite {
 	}
 }
 
-@media ( min-width: 800px ) {
+@media ( min-width: 1000px ) {
 	.grid-layout {
 		grid-template-columns: repeat( 3, 1fr );
 	}
@@ -627,6 +627,12 @@ nav li a {
 	grid-area: image;
 }
 
+.about-resume {
+	grid-area: resume;
+	max-width: 235px;
+	max-height: 35px;
+	margin-top: var(--margin-large);
+}
 
 .about {
 	display: grid;
@@ -638,6 +644,7 @@ nav li a {
 	"image"
 	"heading"
 	"text"
+	"resume"
 }
 
 @media ( min-width: 850px ) {
@@ -646,6 +653,7 @@ nav li a {
 		grid-template-areas: 
 		"heading heading"
 		"text image"
+		"resume image"
 	}
 
 	.about h3{
