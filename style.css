@@ -164,6 +164,12 @@ a:hover {
     visibility: hidden;
 }
 
+.anchor-visible {
+    display: block;
+    position: relative;
+    top: -80px;
+}
+
 /* MAININTED STANDARD STYLING
 button:focus, a:focus {
 	outline: 3px solid rgba(235,51,14,.5);
@@ -211,11 +217,18 @@ button:focus, a:focus {
 	color: var(--color-accent);
 }
 
+.case-study-hr {
+	border: 1px solid var(--color-grey-dark);
+	border-radius: .1rem;
+	margin: 2rem 0 1rem;
+}
+
 hr {
 	border: 2px solid transparent;
 	border-radius: .1rem;
 	margin: 2rem 0;
 }
+
 
 .small-hr {
 	border: 1px solid var(--color-accent);
@@ -431,10 +444,15 @@ cite {
 }
 @media ( min-width: 600px ) {
 	.grid-layout {
-		grid-template-columns: repeat( 3, 1fr );
+		grid-template-columns: repeat( 2, 1fr );
 	}
 }
 
+@media ( min-width: 800px ) {
+	.grid-layout {
+		grid-template-columns: repeat( 3, 1fr );
+	}
+}
 
 /*=========================================================================
   Footer
@@ -505,14 +523,15 @@ ul {
 	margin-top: 0;
 }
 
+
 li {
 	padding: .1rem 0;
-	list-style-type: none;
 }
 
-ol li {
+ul li {
 	list-style-type: disc;
 }
+
 
 
 /*=========================================================================
@@ -550,10 +569,6 @@ nav li a {
 	align-content: center;
 }
 
-@media ( min-width: 890px ){
-	.hero-block {
-	grid-template-columns: repeat(2, 400px);
-}
 
 .hero-text {
 	font-size: var(--font-size-med);
@@ -598,64 +613,34 @@ nav li a {
 /* ==========================================================================
    About
    ========================================================================== */
+
+
+.about-title {
+	grid-area: heading;
+}
+
+.about-text {
+	grid-area: text;
+}
+
+.about-image {
+	grid-area: image;
+}
+
+
 .about {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
 	margin: var(--margin-xl) 0;
 	justify-content: center;
+	grid-template-areas: 
+	"heading heading"
+	"text image"
 }
 
 .about h3{
 	margin-top: 0;
-}
-
-.about-image {
-	grid-area: 1 / col2-start / last-line / 2;
-	justify-self: center;
-
-}
-
-.about-bio {
-	margin-bottom: var(--margin-large);
-}
-
-.resume {
-	display: grid;
-	grid-template-columns: 1fr;
-	justify-items: center;
-}
-
-@media ( min-width: 700px ){
-	.resume {
-	grid-template-columns: 1fr 1fr 1fr;
-}
-
-.resume-identify {
-	margin-bottom: 0;
-}
-
-.resume-header {
-}
-
-.resume-heading {
-}
-
-.resume-location {
-}
-
-.resume-name {
-}
-
-.resume-section {
-}
-
-.resume-tagline {
-}
-
-section {
-}
-
-.resume-section h3 {
 }
 
 
