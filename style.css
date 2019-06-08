@@ -142,6 +142,7 @@ p {
 a{
 	color: var(--color-grey);
 	text-decoration: none;
+	transition: var(--transition-time);
 }
 
 p a {
@@ -155,6 +156,8 @@ a:hover {
 	color: var(--color-white);
 	background-color: var(--color-accent);
 	border-radius: var(--border-radius);
+	box-shadow: var(--shadow-active);
+  	transition: var(--transition-time);
 }
 
 .anchor {
@@ -327,6 +330,7 @@ header {
 
 .icon:hover {
 	background-color: transparent;
+	box-shadow: none;
 }
 
 a svg:hover #linkedin,
@@ -398,6 +402,7 @@ cite {
   	grid-template-rows: auto;
   	box-shadow: var(--shadow);
   	background-color: var(--color-white);
+  	transition: var(--transition-time);
 }
 
 .card-title {
@@ -585,11 +590,12 @@ nav li a {
 	color: var(--color-white);
 	display: inline-block;
 	font-size: var(--font-size-med);
-	font-weight: var(--font-weight-regular);
+	font-weight: var(--font-weight-semi-bold);
 	padding: .5rem;
 	text-decoration: none;
 	text-shadow: none;
 	box-shadow: var(--shadow);
+	transition: var(--transition-time);
 	}
 
 .hero-button:hover {
@@ -629,7 +635,7 @@ nav li a {
 
 .about-resume {
 	grid-area: resume;
-	max-width: 235px;
+	max-width: 250px;
 	max-height: 35px;
 	margin-top: var(--margin-large);
 }
