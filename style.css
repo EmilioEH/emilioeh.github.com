@@ -630,17 +630,27 @@ nav li a {
 
 .about {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr;
 	grid-template-rows: auto;
 	margin: var(--margin-xl) 0;
 	justify-content: center;
 	grid-template-areas: 
-	"heading heading"
-	"text image"
+	"image"
+	"heading"
+	"text"
 }
 
-.about h3{
+@media ( min-width: 850px ) {
+	.about {
+		grid-template-columns: 2fr ;
+		grid-template-areas: 
+		"heading heading"
+		"text image"
+	}
+
+	.about h3{
 	margin-top: 0;
+}
 }
 
 
