@@ -608,7 +608,8 @@ nav li a {
 	outline: none;
 } 
 
-#myBtn {
+@media ( min-width: 650px ) {
+	#myBtn {
 	font-weight: var(--font-weight-medium);
 	display: none;
   	position: fixed;
@@ -616,6 +617,7 @@ nav li a {
   	right: 30px;
   	z-index: 99;
 }
+
 /* ==========================================================================
    About
    ========================================================================== */
