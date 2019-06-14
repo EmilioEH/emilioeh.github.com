@@ -145,7 +145,7 @@ a{
 	transition: var(--transition-time);
 }
 
-p a {
+p a, main li a {
 	color: var(--color-grey-dark);
 	font-weight: var(--font-weight-semi-bold);
 	text-decoration: underline;
