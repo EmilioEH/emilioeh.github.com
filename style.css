@@ -160,6 +160,10 @@ a:hover {
   	transition: var(--transition-time);
 }
 
+.hero-link {
+	font-size: var(--font-size-lg);
+}
+
 .anchor {
     display: block;
     position: relative;
@@ -197,6 +201,16 @@ button:focus, a:focus {
 	font-weight: var(--font-weight-medium);
 	margin: 0;
 
+}
+
+.italic {
+	font-style: italic;
+	margin-bottom: var(--margin-large);
+	font-weight: var(--font-weight-medium);
+}
+
+.contact-paragraph {
+	max-width: 600px;
 }
 
 .copy-right {
@@ -318,7 +332,11 @@ header {
 	display: inline-block;
 	  justify-self: end;
 
-}
+	}
+
+	section {
+	min-height: 80vh;
+	}
 }
 
 .icon {
@@ -458,6 +476,31 @@ cite {
 		grid-template-columns: repeat( 3, 1fr );
 	}
 }
+
+/*
+.contact-email {
+	grid-area: email;
+}
+
+.contact-or {
+	grid-area: or;
+	justify-self: center;
+	align-self: center;
+}
+
+.contact-cell {
+	grid-area: cell;
+  	justify-self: end;
+}
+
+.contact-grid {
+	display: grid;
+	grid-gap: 1rem;
+	grid-template-columns: repeat( 3, 1fr );
+	grid-template-areas: 
+	"email or cell"
+}
+*/
 
 /*=========================================================================
   Footer
