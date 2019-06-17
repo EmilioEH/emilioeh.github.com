@@ -161,17 +161,15 @@ a:hover {
 	font-size: var(--font-size-lg);
 }
 
-.anchor {
+@media ( min-width: 718px ) {
+
+	.anchor {
     display: block;
     position: relative;
     top: -80px;
     visibility: hidden;
-}
+	}
 
-.anchor-visible {
-    display: block;
-    position: relative;
-    top: -80px;
 }
 
 /* MAININTED STANDARD STYLING
@@ -342,7 +340,7 @@ html {
 
 header {
 	background-color: var(--color-white);
-	z-index: 2;
+	z-index: 98;
 	display: grid;
 	box-shadow: var(--shadow);
 	margin: 0;
@@ -369,13 +367,13 @@ header {
 		box-shadow: none;
 	}
 
+	.header-index {
+		position: fixed;
+	}
+
 	section {
 	min-height: 80vh;
 	margin: 0 0 var(--margin-xxxl);
-	}
-
-	.header-index {
-	position: fixed; 
 	}
 
 	main {
@@ -398,7 +396,7 @@ header {
     background: var(--color-white);
 	position: fixed;
   	top: 0;
-  	z-index: 1;
+  	z-index: 97;
   	box-shadow: var(--shadow-light);
 	}
 }
@@ -445,6 +443,10 @@ cite + p {
 
 .no-shadow {
 	box-shadow: none;
+}
+
+.yes-shadow {
+	box-shadow: var(--shadow-light);
 }
 
 .case-study-image-with-no-caption { 
@@ -784,6 +786,8 @@ nav li a {
 
 .about-image {
 	grid-area: image;
+	border: 1px solid var(--color-grey-light);
+	border-radius: .1rem;
 }
 
 .about-resume {
