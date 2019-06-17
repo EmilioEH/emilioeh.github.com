@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="190px" height="42px" viewBox="0 0 190 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
-    <title>Group</title>
+<svg width="340px" height="232px" viewBox="0 0 340 232" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Artboard</title>
     <desc>Created with Sketch.</desc>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group" transform="translate(-1.000000, -9.000000)" fill="#000000">
-            <text id="Emilio-Harrison" font-family="OpenSans-Bold, Open Sans" font-size="25" font-weight="bold">
-                <tspan x="0.345214844" y="27.2727381">Emilio Harrison</tspan>
-            </text>
-            <text id="UX-Designer" font-family="OpenSans-Regular, Open Sans" font-size="20" font-weight="normal">
-                <tspan x="0.341796875" y="45.6456747">UX Designer</tspan>
-            </text>
-        </g>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" fill="#EB330E" x="0" y="0" width="340" height="232" rx="15"></rect>
+        <path d="M134.359684,195 L43,195 L43,37 L134.359684,37 L134.359684,64.4500684 L76.6359881,64.4500684 L76.6359881,99.1409029 L130.345066,99.1409029 L130.345066,126.590971 L76.6359881,126.590971 L76.6359881,167.333789 L134.359684,167.333789 L134.359684,195 Z M297,195 L263.595531,195 L263.595531,126.807114 L201.002692,126.807114 L201.002692,195 L167.490119,195 L167.490119,37 L201.002692,37 L201.002692,98.9247606 L263.595531,98.9247606 L263.595531,37 L297,37 L297,195 Z" id="EH" fill="#FFFFFF" fill-rule="nonzero"></path>
     </g>
 </svg>
