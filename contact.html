@@ -1,4 +1,4 @@
-<!doctype html>
+<!d<!doctype html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -12,7 +12,7 @@
       rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/theme.min.css">
-    <title>Emilio Harrison | Home</title>
+    <title>Emilio Harrison | Contact</title>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137961748-1"></script>
@@ -23,6 +23,8 @@
 
       gtag('config', 'UA-137961748-1');
     </script>
+    
+</head>
 
 </head>
 
@@ -46,11 +48,7 @@
                         <li class="nav-item">
                             <a href="work.html" class="nav-link">My Work</a>
                         </li>
-                        <!-- In Progress
-                        <li class="nav-item">
-                            <a href="about.html" class="nav-link">About</a>
-                        </li>
-                        -->
+
                         <li class="nav-item">
                             <a href="contact.html" class="nav-link">Contact</a>
                         </li>
@@ -62,30 +60,46 @@
 
     <main id="content">
 
-        <!-- Hero -->
-        <div class="container py-5">
-            <h1 class="display-2 pb-2">User Experience Designer</h1>
-            <hr class="border-3 border-white my-4 ml-0 text-left w-25" role="presentation">
-            <div class="row">
+        <div class="container py-6">
+            <div class="row justify-content-center">
                 <div class="col-lg-8">
-                    <p class="font-serif lead mb-4 text-secondary">I firmly believe in the power of collaboration and I'm extremely passionate about solving real problems.</p>
+                    <h1 class="display-4 mb-4">Contact me</h1>
+                    <hr class="border-1 border-light my-4 ml-0 text-left w-15" role="presentation">
+                    <p class="lead text-secondary">Ask me anything, or share your feedback.</p>
                 </div>
             </div>
-            <a href="work.html" class="btn btn-primary">Check out my Work</a>
         </div>
 
-        <!-- Call to action -->
-        <div class="bg-primary text-dark text-center">
-            <div class="container py-6">
-                <h2 class="font-sans-serif">Reach out and let's get to work.</h2>
-                <p class="lead mb-4">I'm always excited for another opportunity to collaborate with anyone passionate about a problem they are trying to solve.</p>
-                <a href="contact.html" class="btn btn-outline-dark">Contact</a>
+        <div class="bg-white text-black">
+            <div class="container py-2">
+                <div class="bg-white mt-n6 px-3 px-lg-0">
+                    <div class="row justify-content-center py-4 py-lg-5">
+                        <div class="col-md-10 col-lg-8">
+                            <p>Fields marked with an <span class="text-primary">*</span> are required.</p>
+                            <form class="py-4" method="POST" action="https://formspree.io/contact-form@emilioharrison.com">
+                                <div class="form-group">
+                                    <label for="inputName">Name <span class="text-primary">*</span></label>
+                                    <input type="text" class="form-control" id="inputName" placeholder="Enter your name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputEmail">Email <span class="text-primary">*</span></label>
+                                    <input type="email" class="form-control" id="inputEmail" placeholder="Enter your email address" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="messageTetxarea">Message <span class="text-primary">*</span></label>
+                                    <textarea class="form-control" id="messageTetxarea" rows="9" placeholder="Enter your message" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-pill btn-primary">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
-    
+
     <!-- Footer -->
-    <footer class="bg-white text-dark">
+    <footer class="bg-light text-black">
         <div class="container pt-6 pb-2">
             <div class="row justify-content-md-between">
                 <div class="col-4 col-md-2 mb-4">
