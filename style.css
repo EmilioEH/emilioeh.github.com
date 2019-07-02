@@ -57,3 +57,19 @@ html {
 	}
 
 }
+
+footer .link {
+	color: #6e6e6e;
+}
+
+
+
+footer .link:hover {
+	color: #262626;
+}
+
+
+
+
+
+
