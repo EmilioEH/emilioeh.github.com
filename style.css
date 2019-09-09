@@ -6,9 +6,6 @@ ul {
 	list-style-type: disc;
 }
 
-.list-no-style {
-	padding-left: 0;
-}
 
 .anchor {
     display: block;
